@@ -35,26 +35,6 @@ fetch('https://dummyjson.com/recipes')
             console.log(recipe)
         }
         for (let recipe of json.recipes) {
-            // document.write('<div style="border: darkmagenta 1px solid;">')
-            // document.write(`
-            //     <img src="${recipe.image}" alt="${recipe.name}" height="200">
-            //     <p>${recipe.name}</p>
-            // `);
-            // document.write('<p>ingredients:</p>');
-            // document.write('<ul>');
-            // for (let ingredient of recipe.ingredients) {
-            //     document.write(`<li>${ingredient}</li>`);
-            // }
-            // document.write('</ul>');
-            // document.write('<p>instructions:</p>');
-            //
-            // document.write('<ul>');
-            // for (let i = 0; i < recipe.instructions.length; i++) {
-            //     document.write(`<li>${recipe.instructions[i]}</li>`);
-            // }
-            // document.write('</ul>');
-            // document.write('</div>')
-
             const div: HTMLDivElement = document.createElement('div');
             const img: HTMLImageElement = document.createElement('img');
             const pName: HTMLParagraphElement = document.createElement('p');
